@@ -36,3 +36,29 @@ for num in range(len(iteArr)):
 # 注：range(num) 函数返回的是一个对象，虽然跟List对象很相似，因为它能够被遍历，但是它并不是List对象
 print(range(5));
 print(list(range(5)));
+
+# 4.break continue 和 else(用于循环的正常退出判断)
+# break 用于终止 for 和 while 循环
+for num in range(1, 10):
+	print(num);
+	# if num > 6:
+	# 	break;
+	# 用于循环的正常退出判断，即非break,continue 和 异常导致的循环退出
+else: 
+	print('loop is end');
+# 5.pass
+# pass语句没有任何含义
+while False:
+	pass
+
+# function 函数
+def fib(n):
+	a, b = 0, 1;
+	result = [];
+	while a < n:
+		print(a, end = ' ');
+		result.append(a);
+		a, b = b, a + b;
+	print();
+	return result;
+print(fib(15));
